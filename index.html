@@ -31,11 +31,17 @@
                         <input type="text" placeholder="Author" id="form-author">
                     
                     <label for="form-pages">Number of Pages</label>
-                        <input type="text" placeholder="Pages" id="form-pages">     
+                        <input type="number" placeholder="Pages" id="form-pages">  
+                <fieldset>
                     <div class="checkbox-container">
-                        <input type="checkbox" id="form-read">
-                        <label for="form-read">Read?</label>
+                        <p>Read?</p>
+                        <input type="radio" name="read" checked id="form-read-yes" class="form-radio" value="yes">
+                        <label for="form-read">Yes</label>
+                        <input type="radio" name ="read" id="form-read-no" class="form-radio" value="no">
+                        <label for="form-read">No</label>                
                     </div>
+                </fieldset>
+                    <button id="save-book">Save</button>
                 </div>
             </form>
     </div>
