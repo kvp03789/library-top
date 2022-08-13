@@ -13,15 +13,31 @@
 <body>
     <div class="container">
         <h1>Basic Library</h1>
-        <button id="addBookButton">+ New Book</button>
+        <button id="addBookButton">+New Book</button>
     </div>
+    <div class="popup-container hidden">
 
-    <div id="popUp">
-        <form action="">
-            <input type="text" placeholder="Title" >
-            <input type="text">
-            <input type="text">
-        </form>
+            <form action="">
+                
+                <div class="form-container">
+                    <div class="inner">
+                        <h3>New Book</h3>
+                        <img src="images/close.svg" alt="" id="close">
+                    </div>
+                    <label for="form-title">Book Title</label>
+                        <input type="text" placeholder="Title" id="form-title">
+                    
+                    <label for="form-author">Author</label>
+                        <input type="text" placeholder="Author" id="form-author">
+                    
+                    <label for="form-pages">Number of Pages</label>
+                        <input type="text" placeholder="Pages" id="form-pages">     
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="form-read">
+                        <label for="form-read">Read?</label>
+                    </div>
+                </div>
+            </form>
     </div>
     <script src="script.js"></script>
 </body>

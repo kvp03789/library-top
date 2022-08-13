@@ -1,9 +1,23 @@
 let library = [];
-const addBookButton = document.querySelector("#addBookButton");
+let addBookButton = document.querySelector("#addBookButton");
+let popup = document.querySelector(".popup-container");
+let closeButton = document.querySelector("#close");
+
+//open and close popup
+addBookButton.addEventListener("click", () => {
+    popup.classList.remove("hidden");
+    popup.classList.add("block")
+});
+
+
+closeButton.addEventListener("click", () => {
+    popup.classList.remove("block");
+    popup.classList.add("hidden")
+});
 
 
 
-addBookButton.addEventListener("click", () => console.log("works"));
+
 
 function Book(title, author, pages) {
     this.title = title;
