@@ -1,0 +1,15 @@
+body {
+    background-color:rgb(55, 55, 55);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color:rgb(4, 141, 239);
+}
